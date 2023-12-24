@@ -14,8 +14,8 @@ const TodoItem = ({ todo, onDelete, onToggleComplete }) => {
     return (
       <>
         <li>
+            <button onClick={handleToggleComplete}>  </button>
           <span style={{ textDecoration: completed ? 'line-through' : 'none' }}>{Text}</span>
-          <button onClick={handleToggleComplete}>Toggle Complete</button>
           <button onClick={handleDelete}>Delete</button>
         </li>
       </>
